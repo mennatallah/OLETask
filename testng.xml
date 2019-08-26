@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OLTE_Task Test"  parallel ="false">
+
+    <parameter name = "browser" value="chrome"></parameter>
+    <parameter name = "url" value="https://play.google.com/store?hl=en/"></parameter>
+
+    <test name="Regression Test" preserve-order="false">
+        <classes>
+            <class name="tests.TestBase" />
+            <class name="tests.AppSuitTest"></class>
+
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
+
